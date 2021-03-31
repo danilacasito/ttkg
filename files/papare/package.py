@@ -1,6 +1,7 @@
 # TTKG "package" INSTALL file
 import os
 os.system("mkdir -pv /usr/app/papare")
+os.system("touch /usr/app/papare/papare")
 with open("/usr/app/papare/papare") as f:
     f.write("#!/usr/bin/python3")
     f.write("print('Hello World By Papare')")
