@@ -1,4 +1,4 @@
-
+# TTKG "package" INSTALL file
 import os
 os.system("mkdir -pv /usr/app/papare")
 with open("/usr/app/papare/papare") as f:
