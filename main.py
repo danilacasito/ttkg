@@ -18,10 +18,10 @@ if a > 0:
         if sys.argv[1] == "install":
             if a == 2:
                 print("Downloading "+sys.argv[2]+"...")
-                r = request.get("https://raw.githubusercontent.com/danilacasito/ttkg/programs/files/"+sys.argv[2]+"/package.py")
-                with open("package.py", "wb") as f:
+                r = request.get("https://raw.githubusercontent.com/danilacasito/ttkg/programs/files/"+sys.argv[2]+"/Makefile")
+                with open("Makefile", "wb") as f:
                     f.write(r.content)
-                os.system("python3 package.py")
+                os.system("make")
             else:
                 print("""
                 Usage:
